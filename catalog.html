@@ -1,0 +1,932 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="#">
+	<meta name="description" content="#">
+	<title>Agro-Arsenal</title>
+	<link rel="shortcut icon" href="assets/images/Icons/map_marker.svg">
+	
+	<link rel="stylesheet" href="css/reboot.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	
+	<header>
+		<!-- Первый блок шапки -- Информация -->
+		<div class="header__contact">
+
+			<div class="container">
+				<div class="header-row">
+					<!-- Лого -->
+					<div class="header__logo">
+						<img src="assets/images/Icons/logo.svg" alt="Agro-Arsenal">
+						<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							viewBox="0 0 205 48.5" style="enable-background:new 0 0 205 48.5;" xml:space="preserve">
+								<style type="text/css">
+									.st1{fill:#003268;}
+								</style>
+							<polygon class="st1" points="76.4,27.3 77.7,24.1 84.5,24.1 80.2,13.9 73,31.6 69.2,31.6 82.4,0 85.7,0 99.4,31.6 87.7,31.6 
+								85.9,27.3 	"/>
+						</svg>
+					</div>
+					<div class="header__contact-body">
+						<div class="header__search-active">
+							<!-- Ссылки и телефон -->
+								<div class="header__info-body">
+									<div class="header__info">
+										<nav class="header__info-nav">
+											<a href="#"><img src="assets/images/Icons/logo.svg" alt="Agro-Arsenal"></a>
+											<a href="#">О компании</a>
+											<a href="#">Запасные части</a>
+											<a href="#">Новости и события</a>
+											<a href="#">Контакты</a>
+											<button class="header__request-btn btn-fill MenuPopupBtn" >
+												Оставить заявку
+											</button>
+										</nav>
+									</div>
+									<div class="header__tel">
+										<a href="tel: +74955421553">+7 (495) 542 15 53</a>
+									</div>
+								</div>
+							<!-- Кнопка заявки и поиска -->
+							<div class="header__request">	
+		
+								<button id="header__search-btn">
+									<img src="assets/images/Icons/search.svg" alt="">
+								</button>	
+								<!-- Кнопка заявки -->
+								<button class="header__request-btn btn-fill RequestBtn" >
+									Оставить заявку
+								</button>
+							</div>
+							<!-- Форма поиска активная -->
+							<div class="header__search hidden">
+								<!-- Форма поиска -->
+							<form action="#" >
+								<input class="" type="text" placeholder="Введите поисковый запрос..." name="search">
+		
+								<button type="submit">
+									<img src="assets/images/Icons/search.svg" alt="">
+								</button>
+								<!-- Кнопка закрытия поиска -->
+								<button id="header__search-close">
+									<img src="assets/images/Icons/close.svg" alt="">
+								</button>
+							</form>				
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div><!-- ./header__contact -->
+
+		<!-- Второй блок шапки -- Навигация -->
+		<div class="header__nav">
+			<div class="container">
+
+				<div class="header-row">
+
+					<div class="header__nav-catalog">
+						<button class="catalog-btn" id="HeaderCatalogBTN">
+							<span class="catalog-line">Green Line</span>
+							<span>Каталог</span> 
+						</button>
+					</div>
+
+					<div class="header__nav-links">
+						<button class="header__navigation-btn">
+							<span>Меню</span>
+							<span class="navigation-btn__arrow">
+								<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								viewBox="0 0 6 10" style="enable-background:new 0 0 6 10;" xml:space="preserve">
+								<style type="text/css">
+							.icon__arrow-right{fill:#84AD31; transition: all 0.1s linear;}
+								</style>
+								<title>arrow_left_icon</title>
+								<desc>Created with Sketch.</desc>
+								<g id="arrow_left_icon">
+									<polygon points="3.7,5 0,1.2 1.1,0 6,5 1.1,10 0,8.8 	"/>
+								</g>
+								</svg>
+							</span>
+						</button>
+
+						<nav class="header__navigation" >
+						<ul>
+							<li><a href="#">Сельскохозяйственные распылители</a></li>
+							<li><a href="#">Спецтехника Merlo</a></li>
+							<li><a href="#">Система точного земледелия</a></li>
+							<li><a href="#">Комбайны</a></li>
+							<li><a href="#">Тракторы</a></li>	
+							<li><a href="#">Кормозаготовка</a></li>
+							<li><a href="#">Обработка почвы и посевов</a></li>
+						</ul>
+						</nav>
+					</div>
+					<!-- Всплывающее меню cсылок -->
+					<div class="nav-links__popup" id="NavLinksPopup">
+						<div class="request__capture">
+							<div class="request__capture-text">
+								<h3>Меню</h3>
+							</div>
+							<div class="popup-request__closeBTN">
+								<button id="NavLinksCloseBTN">
+									<svg version="1.1" id="close__BTN" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									viewBox="0 0 15.8 15.8" style="enable-background:new 0 0 15.8 15.8;" xml:space="preserve">
+										<style type="text/css">
+											#close__BTN{fill:#fff;  }#close__BTN:hover,
+											#close__BTN:active{transition: color 0.1s linear;
+												fill: #8dbaf3;
+											}
+										</style>
+										<polygon  points="15.8,1.1 14.8,0 7.9,6.9 1.1,0 0,1.1 6.9,7.9 0,14.8 1.1,15.8 7.9,9 14.8,15.8 15.8,14.8 9,7.9 "/>
+									</svg>
+
+								</button>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<!-- Всплывающее меню каталога -->
+				<div class="catalog-popup" id="CatalogFormPopup">
+					
+					<div class="request__capture">
+						<!-- Заголовок первого уровня -->
+						<div class="request__capture-text capture-text__firstLevel">
+							<span class="catalog-line">Green Line</span>
+							<h3>Каталог</h3>
+						</div>
+						<!-- Заголовок второго уровня -->
+						<div class="request__capture-text capture-text__secondLevel">
+							<h3>Спецтехника Merlo</h3>
+						</div>
+						<!-- Заголовок третьего уровня -->
+						<div class="request__capture-text capture-text__thirdLevel ">
+							<h3>Гусеничные транспортеры</h3>
+						</div>
+						<!-- Кнопка закрытия каталога -->
+						<div class="popup-request__closeBTN">
+							<button id="PopupRequestCloseBTN">
+								<svg version="1.1" id="close__BTN" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								viewBox="0 0 15.8 15.8" style="enable-background:new 0 0 15.8 15.8;" xml:space="preserve">
+									<style type="text/css">
+										#close__BTN{fill:#fff;  }#close__BTN:hover,
+										#close__BTN:active{transition: color 0.1s linear;
+											fill: #8dbaf3;
+										}
+									</style>
+									<polygon  points="15.8,1.1 14.8,0 7.9,6.9 1.1,0 0,1.1 6.9,7.9 0,14.8 1.1,15.8 7.9,9 14.8,15.8 15.8,14.8 9,7.9 "/>
+								</svg>
+
+							</button>
+						</div>
+					</div>
+	
+				</div>
+
+				<div class="header__catalog" >
+
+					<!-- Лучше сюда не заглядывать без крайней необходимости -->
+						<nav class="catalog-dropdown">
+							<!-- Первый уровень меню -->
+							<ul class="catalog-firstLevel">
+								<!-- 1 -->
+								<li><a href="#">
+									<div class="catalog-link">Спецтехника Merlo <span>56</span> <span class="arrow-right">›</span></div>
+									</a>
+									<!-- Второй уровень меню -->
+									<ul class="catalog-secondLevel">
+										<!-- 1 -->
+										<li><a href="#"><div class="catalog-link">Гусеничные транспортеры <span>3</span><span class="arrow-right">›</span></div>
+											</a>
+											<!-- Третий уровень меню -->
+											<ul class="catalog-thirdLevel">
+												<!-- 1 -->
+												<li><a href="#"><div class="catalog-link">COMPACTS <span>3</span></div></a>
+													<!-- Четвертый уровень меню (Миниатюры товаров) -->
+													<ul class="catalog-fourthLevel">
+														<li>
+															<a href="#">
+																<div>
+																	<h3>Спецтехника Merlo</h3>
+																	<img src="assets/images/Header-Menu__Catalog/cat-1.png" alt="Миниатюры товаров">
+																</div>
+															</a>
+														</li>
+													</ul>
+												</li>
+												<!-- 2 -->
+												<li><a href="#"><div class="catalog-link">TURBOFARMER <span>7</span></div></a>
+													<!-- Четвертый уровень меню (Миниатюры товаров) -->
+													<ul class="catalog-fourthLevel">
+														<li>
+															<a href="#">
+																<div>
+																	<h3>Спецтехника Merlo</h3>
+																	<img src="assets/images/Header-Menu__Catalog/cat-1.png" alt="Миниатюры товаров">
+																</div>
+															</a>
+														</li>
+													</ul>
+												</li>
+												<!-- 3 -->
+												<li><a href="#"><div class="catalog-link">MULTIFARMER <span>4</span></div></a>
+													<!-- Четвертый уровень меню (Миниатюры товаров) -->
+													<ul class="catalog-fourthLevel">
+														<li>
+															<a href="#">
+																<div>
+																	<h3>Спецтехника Merlo</h3>
+																	<img src="assets/images/Header-Menu__Catalog/cat-1.png" alt="Миниатюры товаров">
+																</div>
+															</a>
+														</li>
+													</ul>
+												</li>
+												<!-- 4 -->
+												<li><a href="#"><div class="catalog-link">ROTO <span>2</span></div></a>
+													<!-- Четвертый уровень меню (Миниатюры товаров) -->
+													<ul class="catalog-fourthLevel">
+														<li>
+															<a href="#">
+																<div>
+																	<h3>Спецтехника Merlo</h3>
+																	<img src="assets/images/Header-Menu__Catalog/cat-1.png" alt="Миниатюры товаров">
+																</div>
+															</a>
+														</li>
+													</ul>
+												</li>
+												<!-- 5 -->
+												<li><a href="#"><div class="catalog-link">PANORAMIC <span>4</span></div></a>
+													<!-- Четвертый уровень меню (Миниатюры товаров) -->
+													<ul class="catalog-fourthLevel">
+														<li>
+															<a href="#">
+																<div>
+																	<h3>Спецтехника Merlo</h3>
+																	<img src="assets/images/Header-Menu__Catalog/cat-1.png" alt="Миниатюры товаров">
+																</div>
+															</a>
+														</li>
+													</ul>
+												</li>
+												<!-- Кнопка назад -->
+												<a href="#" class="catalog-back__btn"><h4>
+													<span><svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 6 10" style="enable-background:new 0 0 6 10;" xml:space="preserve">
+														<style type="text/css">
+													.icon__arrow-right{fill:#84AD31; transition: all 0.1s linear;}
+														</style>
+														<title>arrow_left_icon</title>
+														<desc>Created with Sketch.</desc>
+														<g id="arrow_left_icon">
+															<polygon points="3.7,5 0,1.2 1.1,0 6,5 1.1,10 0,8.8 	"></polygon>
+														</g>
+														</svg></span>
+													Назад</h4></a>
+											</ul>
+										</li>
+										<!-- 2 -->
+										<li><a href="#"><div class="catalog-link">Cамоходный бетоносмеситель DBM <span>7</span></div></a>
+										</li>
+										<!-- 2 -->
+										<li><a href="#"><div class="catalog-link">Cамоходный бетоносмеситель DBM <span>7</span></div></a>
+										</li>
+										<!-- 2 -->
+										<li><a href="#"><div class="catalog-link">Cамоходный бетоносмеситель DBM <span>7</span></div></a>
+										</li>
+										<!-- 3 -->
+										<li><a href="#"><div class="catalog-link">Мусоровозы TECHNO <span>4</span></div>
+											</a>
+										</li>
+										<!-- 4 -->
+										<li><a href="#"><div class="catalog-link">Лесной измельчительный комплекс TRE EMME <span>2</span></div>
+											</a>
+											
+										</li>
+										<!-- 5 -->
+										<li><a href="#"><div class="catalog-link">Телескопические погрузчики <span>4</span><span class="arrow-right">›</span></div>
+											</a>
+											<!-- Третий уровень меню -->
+											<ul class="catalog-thirdLevel">
+												<!-- 1 -->
+												<li><a href="#"><div class="catalog-link">COMPACTS <span>3</span></div></a>
+													<!-- Четвертый уровень меню (Миниатюры товаров) -->
+													<ul class="catalog-fourthLevel">
+														<li>
+															<a href="#">
+																<div>
+																	<h3>Спецтехника Merlo</h3>
+																	<img src="assets/images/Header-Menu__Catalog/cat-1.png" alt="Миниатюры товаров">
+																</div>
+															</a>
+														</li>
+													</ul>
+												</li>
+												<!-- 2 -->
+												<li><a href="#"><div class="catalog-link">TURBOFARMER <span>7</span></div></a>
+													<!-- Четвертый уровень меню (Миниатюры товаров) -->
+													<ul class="catalog-fourthLevel">
+														<li>
+															<a href="#">
+																<div>
+																	<h3>Спецтехника Merlo</h3>
+																	<img src="assets/images/Header-Menu__Catalog/cat-1.png" alt="Миниатюры товаров">
+																</div>
+															</a>
+														</li>
+													</ul>
+												</li>
+												<!-- 3 -->
+												<li><a href="#"><div class="catalog-link">MULTIFARMER <span>4</span></div></a>
+													<!-- Четвертый уровень меню (Миниатюры товаров) -->
+													<ul class="catalog-fourthLevel">
+														<li>
+															<a href="#">
+																<div>
+																	<h3>Спецтехника Merlo</h3>
+																	<img src="assets/images/Header-Menu__Catalog/cat-1.png" alt="Миниатюры товаров">
+																</div>
+															</a>
+														</li>
+													</ul>
+												</li>
+												<!-- 4 -->
+												<li><a href="#"><div class="catalog-link">ROTO <span>2</span></div></a>
+													<!-- Четвертый уровень меню (Миниатюры товаров) -->
+													<ul class="catalog-fourthLevel">
+														<li>
+															<a href="#">
+																<div>
+																	<h3>Спецтехника Merlo</h3>
+																	<img src="assets/images/Header-Menu__Catalog/cat-1.png" alt="Миниатюры товаров">
+																</div>
+															</a>
+														</li>
+													</ul>
+												</li>
+												<!-- 5 -->
+												<li><a href="#"><div class="catalog-link">PANORAMIC <span>4</span></div></a>
+													<!-- Четвертый уровень меню (Миниатюры товаров) -->
+													<ul class="catalog-fourthLevel">
+														<li>
+															<a href="#">
+																<div>
+																	<h3>Спецтехника Merlo</h3>
+																	<img src="assets/images/Header-Menu__Catalog/cat-1.png" alt="Миниатюры товаров">
+																</div>
+															</a>
+														</li>
+													</ul>
+												</li>
+												<!-- Кнопка назад -->
+												<a href="#" class="catalog-back__btn"><h4>
+													<span><svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 6 10" style="enable-background:new 0 0 6 10;" xml:space="preserve">
+														<style type="text/css">
+													.icon__arrow-right{fill:#84AD31; transition: all 0.1s linear;}
+														</style>
+														<title>arrow_left_icon</title>
+														<desc>Created with Sketch.</desc>
+														<g id="arrow_left_icon">
+															<polygon points="3.7,5 0,1.2 1.1,0 6,5 1.1,10 0,8.8 	"></polygon>
+														</g>
+														</svg></span>
+													Назад</h4></a>
+											</ul>
+										</li>
+										<!-- 6 -->
+										<li><a href="#"><div class="catalog-link">Навесное оборудование <span>3</span></div>
+											</a>
+										</li>
+										<!-- Кнопка назад -->
+										<a href="#" class="catalog-back__btn"><h4>
+											<span><svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 6 10" style="enable-background:new 0 0 6 10;" xml:space="preserve">
+												<style type="text/css">
+											.icon__arrow-right{fill:#84AD31; transition: all 0.1s linear;}
+												</style>
+												<title>arrow_left_icon</title>
+												<desc>Created with Sketch.</desc>
+												<g id="arrow_left_icon">
+													<polygon points="3.7,5 0,1.2 1.1,0 6,5 1.1,10 0,8.8 	"></polygon>
+												</g>
+												</svg></span>
+											Назад</h4></a>
+	
+									</ul>
+								</li>
+								<!-- 2 -->
+								<li><a href="#">
+									<div class="catalog-link">Сельскохозяйственные распылители <span>15</span><span class="arrow-right">›</span></div>
+								</a></li>
+								<!-- 3 -->
+								<li><a href="#">
+									<div class="catalog-link">Система точного земледелия <span>1</span></div>
+								</a></li>
+								<!-- 4 -->
+								<li><a href="#">
+									<div class="catalog-link">Комбайны <span>23</span><span class="arrow-right">›</span></div>
+								</a></li>
+								<!-- 5 -->
+								<li><a href="#">
+									<div class="catalog-link">Тракторы <span>17</span><span class="arrow-right">›</span></div>
+								</a></li>
+								<!-- 6 -->
+								<li><a href="#">
+									<div class="catalog-link">Кормозаготовка <span>12</span><span class="arrow-right">›</span></div>
+								</a></li>
+								<!-- 7 -->
+								<li><a href="#">
+									<div class="catalog-link">Обработка почвы и посевов <span>23</span><span class="arrow-right">›</span></div>
+								</a></li>
+
+								
+							</ul>
+						</nav>
+				</div>
+			</div>
+		</div><!-- ./header__nav -->
+
+	</header>
+    
+    <main>
+        <div class="container">
+            <section>
+                <div class="catalog">
+					<div class="page__capture">
+						<span><ol class="breadcrumb">
+							<li><a href="#">Главная</a> <span>/</span></li>
+							<li><a href="#">Каталог</a> <span>/</span></li>
+						</ol></span>
+						<h1>Каталог техники</h1>
+                    </div>
+                    
+                    <div class="catalog__body">
+                            <div class="catalog__list">
+                                <div class="catalog__list-double">
+                                    <!-- 1 карточка -->
+                                    <div class="catalog__list-item">
+                                        <!-- Название карточки -->
+                                        <div class="list-item__capture">
+                                        <a href="#">
+                                            <h3>Спецтехника MERLO 
+                                                <span class="icon__arrow-right">
+                                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 6 10" style="enable-background:new 0 0 6 10;" xml:space="preserve">
+                                                    <style type="text/css">
+                                                .icon__arrow-right{fill:#84AD31; transition: all 0.1s linear;}
+                                                    </style>
+                                            <title>arrow_left_icon</title>
+                                            <desc>Created with Sketch.</desc>
+                                            <g id="arrow_left_icon">
+                                                <polygon class="st0" points="3.7,5 0,1.2 1.1,0 6,5 1.1,10 0,8.8 	"/>
+                                            </g>
+                                                    </svg></span>
+                                                </h3></a>
+                                        </div>
+                                        <!-- Список ссылок -->
+                                        <ul class="list-item__links">
+                                            <li><a href="#">Гусеничные транспортеры <span>3</span> </a></li>
+                                            <li><a href="#">Cамоходный бетоносмеситель DBM <span>7</span></a></li>
+                                            <li><a href="#">Мусоровозы TECHNO <span>4</span></a></li>
+                                            <li><a href="#">Лесной измельчительный комплекс TRE EMME <span>2</span></a></li>
+                                            <li><a href="#">Телескопические погрузчики <span>4</span></a></li>
+                                            <li><a href="#">Навесное оборудование <span>3</span></a></li>
+                                        </ul>
+                                        <!-- Картинка -->
+                                        <div class="list-item__img">
+                                            <img src="assets/images/Catalog-list Page/1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- 5 карточка -->
+                                    <div class="catalog__list-item">
+                                        <!-- Название карточки -->
+                                    <div class="list-item__capture">
+                                        <a href="#">
+                                            <h3>Сельскохозяйственные  распылители 
+                                            <span class="icon__arrow-right">
+                                                <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 6 10" style="enable-background:new 0 0 6 10;" xml:space="preserve">
+                                                <style type="text/css">
+                                            .icon__arrow-right{fill:#84AD31; transition: all 0.1s linear;}
+                                                </style>
+                                        <title>arrow_left_icon</title>
+                                        <desc>Created with Sketch.</desc>
+                                        <g id="arrow_left_icon">
+                                            <polygon class="st0" points="3.7,5 0,1.2 1.1,0 6,5 1.1,10 0,8.8 	"/>
+                                        </g>
+                                                </svg>
+                                            </span></h3>
+                                        </a>
+                                    </div>
+                                    <!-- Список ссылок -->
+                                    <ul class="list-item__links">
+                                        <li><a href="#">Самоходные распылители <span> 9</span></a></li>
+                                        <li><a href="#">Дверные распылители  <span>14</span></a></li>
+                                        <li><a href="#">Обученные распылители <span> 4</span></a></li>
+                                    </ul>
+                                    <!-- Картинка -->
+                                    <div class="list-item__img">
+                                        <img src="assets/images/Catalog-list Page/5.jpg" alt="">
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__list-double">
+                                    <!-- 2 карточка -->
+                                    <div class="catalog__list-item">
+                                        <!-- Название карточки -->
+                                        <div class="list-item__capture">
+                                        <a href="#">
+                                            <h3>Система точного земледелия  
+                                            <span class="icon__arrow-right">
+                                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 6 10" style="enable-background:new 0 0 6 10;" xml:space="preserve">
+                                                    <style type="text/css">
+                                                .icon__arrow-right{fill:#84AD31; transition: all 0.1s linear;}
+                                                    </style>
+                                            <title>arrow_left_icon</title>
+                                            <desc>Created with Sketch.</desc>
+                                            <g id="arrow_left_icon">
+                                                <polygon class="st0" points="3.7,5 0,1.2 1.1,0 6,5 1.1,10 0,8.8 	"/>
+                                            </g>
+                                                    </svg>
+                                                </span></h3>
+                                            </a>
+                                        </div>
+                                        <!-- Список ссылок -->
+                                        <ul class="list-item__links">
+                                            
+                                        </ul>
+                                        <!-- Картинка -->
+                                        <div class="list-item__img">
+                                            <img src="assets/images/Catalog-list Page/2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- 6 карточка -->
+                                    <div class="catalog__list-item">
+                                        <!-- Название карточки -->
+                                    <div class="list-item__capture">
+                                        <a href="#">
+                                            <h3>Комбайны  
+                                            <span class="icon__arrow-right">
+                                                <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 6 10" style="enable-background:new 0 0 6 10;" xml:space="preserve">
+                                                <style type="text/css">
+                                            .icon__arrow-right{fill:#84AD31; transition: all 0.1s linear;}
+                                                </style>
+                                        <title>arrow_left_icon</title>
+                                        <desc>Created with Sketch.</desc>
+                                        <g id="arrow_left_icon">
+                                            <polygon class="st0" points="3.7,5 0,1.2 1.1,0 6,5 1.1,10 0,8.8 	"/>
+                                        </g>
+                                                </svg>
+                                            </span></h3>
+                                        </a>
+                                    </div>
+                                    <!-- Список ссылок -->
+                                    <ul class="list-item__links">
+                                        <li><a href="#">Серия C6000 <span>3</span></a></li>
+                                        <li><a href="#">Серии 6060 HTS | 6090 HTS | 6095 HTS <span>7</span></a></li>
+                                        <li><a href="#">Серия C9000 <span>4</span></a></li>
+                                    </ul>
+                                    <!-- Картинка -->
+                                    <div class="list-item__img">
+                                        <img src="assets/images/Catalog-list Page/6.jpg" alt="">
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__list-double">
+                                    <!-- 3 карточка -->
+                                    <div class="catalog__list-item">
+                                        <!-- Название карточки -->
+                                    <div class="list-item__capture">
+                                        <a href="#">
+                                            <h3>Тракторы  
+                                            <span class="icon__arrow-right">
+                                                <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 6 10" style="enable-background:new 0 0 6 10;" xml:space="preserve">
+                                                <style type="text/css">
+                                            .icon__arrow-right{fill:#84AD31; transition: all 0.1s linear;}
+                                                </style>
+                                        <title>arrow_left_icon</title>
+                                        <desc>Created with Sketch.</desc>
+                                        <g id="arrow_left_icon">
+                                            <polygon class="st0" points="3.7,5 0,1.2 1.1,0 6,5 1.1,10 0,8.8 	"/>
+                                        </g>
+                                                </svg>
+                                            </span></h3>
+                                        </a>
+                                    </div>
+                                    <!-- Список ссылок -->
+                                    <ul class="list-item__links">
+                                        <li><a href="#">3-х рядные тракторы <span>3</span></a></li>
+                                        <li><a href="#">Электрические тракторы <span>7</span></a></li>
+                                        <li><a href="#">Тракторы DEUTZ-FAHR <span>4</span></a></li>
+                                    </ul>
+                                    <!-- Картинка -->
+                                    <div class="list-item__img">
+                                        <img src="assets/images/Catalog-list Page/3.jpg" alt="">
+                                    </div>
+                                    </div>
+                                    <!-- 7 карточка -->
+                                    <div class="catalog__list-item">
+                                        <!-- Название карточки -->
+                                    <div class="list-item__capture">
+                                        <a href="#">
+                                            <h3>Кормозаготовка  
+                                            <span class="icon__arrow-right">
+                                                <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 6 10" style="enable-background:new 0 0 6 10;" xml:space="preserve">
+                                                <style type="text/css">
+                                            .icon__arrow-right{fill:#84AD31; transition: all 0.1s linear;}
+                                                </style>
+                                        <title>arrow_left_icon</title>
+                                        <desc>Created with Sketch.</desc>
+                                        <g id="arrow_left_icon">
+                                            <polygon class="st0" points="3.7,5 0,1.2 1.1,0 6,5 1.1,10 0,8.8 	"/>
+                                        </g>
+                                                </svg>
+                                            </span></h3>
+                                        </a>
+                                    </div>
+                                    <!-- Список ссылок -->
+                                    <ul class="list-item__links">
+                                        <li><a href="#">Рулонные пресс-подборщики <span>3</span></a></li>
+                                        <li><a href="#">Прицепные комбайны для кукурузы <span>7</span></a></li>
+                                        <li><a href="#">Прицепы-подборщики <span>4</span></a></li>
+                                        <li><a href="#">Валкообразователи <span>2</span></a></li>
+                                        <li><a href="#">Роторные ворошилки <span>4</span></a></li>
+                                        <li><a href="#">Косилки <span>3</span></a></li>
+                                    </ul>
+                                    <!-- Картинка -->
+                                    <div class="list-item__img">
+                                        <img src="assets/images/Catalog-list Page/7.jpg" alt="">
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__list-double">
+                                <!-- 4 карточка -->
+                                    <div class="catalog__list-item">
+                                    <!-- Название карточки -->
+                                <div class="list-item__capture">
+                                    <a href="#">
+                                        <h3>оБРАБОТКА ПОЧВЫ И ПОСЕВОВ   
+                                        <span class="icon__arrow-right">
+                                            <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 6 10" style="enable-background:new 0 0 6 10;" xml:space="preserve">
+                                            <style type="text/css">
+                                        .icon__arrow-right{fill:#84AD31; transition: all 0.1s linear;}
+                                            </style>
+                                    <title>arrow_left_icon</title>
+                                    <desc>Created with Sketch.</desc>
+                                    <g id="arrow_left_icon">
+                                        <polygon class="st0" points="3.7,5 0,1.2 1.1,0 6,5 1.1,10 0,8.8 	"/>
+                                    </g>
+                                            </svg>
+                                        </span></h3>
+                                    </a>
+                                </div>
+                                <!-- Список ссылок -->
+                                <ul class="list-item__links">
+                                    <li><a href="#">Сеялки <span>3</span></a></li>
+                                    <li><a href="#">Ротационные бороны <span>7</span></a></li>
+                                    <li><a href="#">Дисковые бороны <span>4</span></a></li>
+                                    <li><a href="#">Культиваторы <span>3</span></a></li>
+                                    <li><a href="#">Плуги <span>7</span></a></li>
+                                    <li><a href="#">Короткобазовые комбинации <span>4</span></a></li>
+                                </ul>
+                                <!-- Картинка -->
+                                <div class="list-item__img">
+                                    <img src="assets/images/Catalog-list Page/4.jpg" alt="">
+                                </div>
+                                    </div>
+                                    <!-- 8 карточка блок с контактами -->
+                                    <div class="catalog__list-item">
+                                      <!-- Блок с контактами компании -->
+                                        <div class="aside__request-banner">
+                                            <img src="assets/images/Aside Nav/Offer Banner.jpg" alt="Фон блока с информацией сбоку">
+                                            <div class="aside__request-banner-text">
+                                                <span class="contact-sticker">поможем с выбором</span>
+                                                <a href="tel: +74955421553">+7 (495) 542 15 53</a>
+                                                <p>Пн-Пт с 9:00 до 18:00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                              
+                            </div> <!--./catalog__list  -->
+                    </div>
+                    
+                </div>
+            </section><!-- ./contacts -->
+        </div>
+    </main>
+
+	<footer>
+		<!-- Блок с лого и информацией о компании -->
+		<div class="footer__info">
+			<div class="container">
+				<div class="footer-row">
+					<div class="footer__logo">
+						<img src="assets/images/Icons/logo.svg" alt="Agro-Arsenal">
+					</div>
+
+					<div class=" footer__company-info">Оптовая торговля сельскохозяйственной техникой, обслуживание и поставка запасных частей</div>
+
+					<div class=" footer__social-links">
+						<!-- VK -->
+						<a href="#">
+							<!-- Иконка ВК -->
+							<svg version="1.1" id="VK__Social" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								viewBox="0 0 27.7 15" style="enable-background:new 0 0 27.7 15;" xml:space="preserve">
+							
+							<path  d="M13.5,14.9h1.7c0,0,0.5-0.1,0.8-0.3c0.2-0.2,0.2-0.7,0.2-0.7s0-2.1,1-2.4c1-0.3,2.3,2,3.7,2.9
+								c1,0.7,1.8,0.5,1.8,0.5l3.7,0c0,0,1.9-0.1,1-1.6c-0.1-0.1-0.5-1.1-2.7-3c-2.3-2-2-1.7,0.8-5.2c1.7-2.2,2.4-3.5,2.2-4
+								c-0.2-0.5-1.5-0.4-1.5-0.4l-4.2,0c0,0-0.3,0-0.5,0.1c-0.2,0.1-0.4,0.4-0.4,0.4s-0.7,1.7-1.5,3.1c-1.9,3-2.6,3.1-2.9,3
+								c-0.7-0.4-0.5-1.7-0.5-2.7c0-2.9,0.5-4.1-0.9-4.4C14.8,0.1,14.5,0,13.3,0c-1.5,0-2.7,0-3.5,0.3C9.4,0.6,9,1.1,9.2,1.1
+								c0.3,0,0.9,0.2,1.2,0.6c0.4,0.6,0.4,1.8,0.4,1.8s0.2,3.4-0.6,3.8C9.8,7.6,9,7,7.3,4.3C6.5,2.9,5.8,1.3,5.8,1.3S5.7,1.1,5.5,0.9
+								C5.2,0.7,4.9,0.7,4.9,0.7l-4,0c0,0-0.6,0-0.8,0.3c-0.2,0.2,0,0.7,0,0.7S3.2,8.5,6.7,12C9.9,15.1,13.5,14.9,13.5,14.9L13.5,14.9z"/>
+							</svg>
+						</a>
+						<!-- FACEBOOK -->
+						<a href="#" >
+							<!-- Иконка Фейсбук -->
+							<svg version="1.1" id="Facebook__Social" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								viewBox="0 0 9.4 20" style="enable-background:new 0 0 9.4 20;" xml:space="preserve">
+								
+								<path  d="M7.1,3.4h2.3V0L6.2,0C2.8,0,2,2.6,2,4.2v2.3H0V10h2v10h4.2V10H9l0.4-3.5H6.2V4.4C6.2,3.6,6.7,3.4,7.1,3.4
+									L7.1,3.4z"/>
+							</svg>
+						</a>
+						<!-- INSTAGRAM -->
+						<a href="#">
+							<!-- Иконка Инстаграм -->
+							<svg version="1.1" id="Instagram__Social" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+								<path  d="M19.9,5.9c0-1.1-0.2-1.8-0.5-2.4c-0.3-0.7-0.6-1.3-1.2-1.8c-0.5-0.5-1.1-0.9-1.8-1.2c-0.6-0.2-1.4-0.4-2.4-0.5
+									C13.1,0,12.7,0,10,0S6.9,0,5.9,0.1c-1.1,0-1.8,0.2-2.4,0.5C2.8,0.8,2.2,1.2,1.7,1.7C1.2,2.2,0.8,2.8,0.5,3.4
+									C0.3,4.1,0.1,4.8,0.1,5.9C0,6.9,0,7.3,0,10s0,3.1,0.1,4.1c0,1.1,0.2,1.8,0.5,2.4c0.3,0.7,0.6,1.3,1.2,1.8c0.5,0.5,1.1,0.9,1.8,1.2
+									c0.6,0.2,1.4,0.4,2.4,0.5C6.9,20,7.3,20,10,20s3.1,0,4.1-0.1c1.1,0,1.8-0.2,2.4-0.5c1.3-0.5,2.4-1.6,2.9-2.9
+									c0.2-0.6,0.4-1.4,0.5-2.4c0-1.1,0.1-1.4,0.1-4.1S20,6.9,19.9,5.9z M18.1,14c0,1-0.2,1.5-0.3,1.9c-0.3,0.9-1,1.6-1.9,1.9
+									c-0.4,0.1-0.9,0.3-1.9,0.3c-1.1,0-1.4,0.1-4,0.1s-3,0-4-0.1c-1,0-1.5-0.2-1.9-0.3c-0.4-0.2-0.8-0.4-1.1-0.7
+									c-0.3-0.3-0.6-0.7-0.7-1.1C2.1,15.6,1.9,15,1.9,14c0-1.1-0.1-1.4-0.1-4s0-3,0.1-4c0-1,0.2-1.5,0.3-1.9C2.4,3.7,2.6,3.3,3,3
+									c0.3-0.3,0.7-0.6,1.1-0.7C4.5,2.1,5,1.9,6,1.9c1.1,0,1.4-0.1,4-0.1c2.7,0,3,0,4,0.1c1,0,1.5,0.2,1.9,0.3c0.4,0.2,0.8,0.4,1.1,0.7
+									c0.3,0.3,0.6,0.7,0.7,1.1C17.9,4.5,18.1,5,18.1,6c0,1.1,0.1,1.4,0.1,4S18.2,13,18.1,14z"/>
+								<path  d="M10,4.9c-2.8,0-5.1,2.3-5.1,5.1s2.3,5.1,5.1,5.1c2.8,0,5.1-2.3,5.1-5.1S12.8,4.9,10,4.9z M10,13.3
+									c-1.8,0-3.3-1.5-3.3-3.3S8.2,6.7,10,6.7c1.8,0,3.3,1.5,3.3,3.3S11.8,13.3,10,13.3z"/>
+								<path  d="M16.5,4.7c0,0.7-0.5,1.2-1.2,1.2c-0.7,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2C16,3.5,16.5,4,16.5,4.7z"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Основной футер -->
+		<div class="footer__body">
+			<div class="container">
+				<div class="footer-row">
+					<!-- Блок Адрес -->
+					<div class="footer__request">
+						<div class="footer__request-adress">
+							<a href="#"><h4>Адрес:</h4></a>
+							<p>Россия, Московская область, Дзержинский,
+								ул. Энергетиков, д. 7</p>
+							<button class="btn-border footer__request-btn RequestBtn" >Оставить заявку</button>
+						</div>
+						<div class="footer__request-policy">
+							<p><a href="">Политика конфиденциальности</a></p>
+							<p>© 2020 АгроАрсенал | Все права защищены</p>
+						</div>
+					</div>
+					<!-- Блок Каталог -->
+					<div class="footer__catalog">
+						<a href="#"><h4>Каталог техники:</h4></a>
+							<p><a href="">Сельскохозяйственные распылители</a></p>	
+							<p><a href="">Спецтехника Merlo</a></p>	
+							<p><a href="">Система точного земледелия</a></p>
+							<p><a href="">Комбайны</a></p>
+							<p><a href="">Тракторы</a></p>
+							<p><a href="">Кормозаготовка</a></p>	
+							<p><a href="">Обработка почвы и посевов</a></p>
+					</div>
+					<!-- Блок о компании -->
+					<div class="footer__about">
+						
+						<div class="footer__about-links">
+							<a href="#"><h4>О компании</h4></a>
+							<p><a href="#">Запасные части</a>	</p>
+							<p><a href="#">Новости и события</a>	</p>
+							<p><a href="#">Контакты</a>	</p>
+						</div>
+
+						<div class="footer_about-created">
+							Разработка сайта: <img src="assets/images/Icons/logo_plast.svg" alt="Plastilin Art Web Studio">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Блок, перекрывающий экран -->
+	<div class="window"></div>
+	
+	<!-- Всплывающее окно (Popup - форма обратной связи) -->
+	<div class=" popup-request" id="RequestFormWindow">
+		<div class="request__capture">
+			<div class="request__capture-text">
+				<h3>Заявка на покупку</h3>
+			</div>
+			<div class="popup-request__closeBTN">
+				<button id="RequestCloseBtn">
+					<svg version="1.1" id="close__BTN" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 	viewBox="0 0 15.8 15.8" style="enable-background:new 0 0 15.8 15.8;" xml:space="preserve">
+						<style type="text/css">
+							#close__BTN{fill:#fff;  }#close__BTN:hover,
+							#close__BTN:active{transition: or 0.1s linear;
+								fill: #8dbaf3;
+							}
+						</style>
+						<polygon  points="15.8,1.1 14.8,0 7.9,6.9 1.1,0 0,1.1 6.9,7.9 0,14.8 1.1,15.8 7.9,9 14.8,15.8 15.8,14.8 9,7.9 "/>
+					</svg>
+
+				</button>
+			</div>
+		</div>
+
+		<div class="request__form">
+			<!-- Форма обратной связи -->
+			<form id="feedbackForm" action="" enctype="" novalidate>
+				
+				<div class="request__input-form">
+					<div class="input-form">
+						<div class="request-form__item">
+							<!-- Имя пользователя -->
+							<label for="name" class="control-label">Ваше имя <span>*</span></label>
+							<input required id="name" type="text" name="name" class="form-control" value=""  minlength="2" maxlength="30" >
+						</div>
+						<div class="request-form__item">
+							<!-- Телефон пользователя -->					
+							<label for="tel" class="control-label">Ваш телефон <span>*</span></label>
+							<input required id="clientPhone" type="tel" name="tel" class="form-control" value=""  minlength="12" maxlength="16">
+						</div>
+						<div class="request-form__item">
+							<!-- Email пользователя -->
+							<label for="email" class="control-label">Ваш e-mail <span>*</span></label>
+							<input required id="email" type="email" name="email"  class="form-control" value="">
+						</div>
+					</div>
+				
+					<!-- Сообщение пользователя -->
+					<div class="input-form">
+						<div class="request-form__item">
+						<label for="message" class="control-label">Ваше сообщение<label>
+						<textarea id="message" name="message" class="form-control" rows="3" minlength="20"
+							maxlength="500" required="required"></textarea>
+						
+						</div>
+					</div>
+				</div>
+				<!-- Пользовательское солашение -->
+				<div class="request-form__policy">
+					<p>Поля, обязательные для заполнения, помечены <span>*</span></p>
+				  <div class="request-form__checkbox">
+					<input type="checkbox" name="agree" class="custom-control-input" id="customCheck">
+					<label class="custom-control-label" for="customCheck">Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, на условиях и для целей, определенных на странице <a href="#">пользовательское соглашение</a> </label>
+				  </div>
+				</div>
+				<!-- Кнопка для отправки формы  -->
+				<div class=" request-form__submit-btn">
+				  <button type="submit" class="btn-fill submit-btn" id="RequestSubmitBtn">Оставить заявку</button>
+				</div>
+			</form>
+		</div>
+		
+	</div>
+	 <!-- Сообщение об успешной отправке формы -->
+	<div class="popup-request__confirm">
+		<div class="request__capture">
+			<div class="request__capture-text">
+				<h3>Ваша заявка отправлена</h3>
+			</div>
+		</div>
+		<div class="request__text">
+			Наши специалисты свяжутся с Вами в ближайшее время. Спасибо за интерес к услугам магазина АгроАрсенал.
+		</div>
+		<div class="request-form__submit-btn">
+			<button type="submit" class="btn-fill submit-btn" id="RequestPopupClose">Хорошо</button>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/lightbox.js"></script>
+	<script src="assets/js/scripts.js"></script>
+
+</body>
+</html>
